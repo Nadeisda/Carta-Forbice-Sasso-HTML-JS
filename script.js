@@ -3,8 +3,8 @@ let punteggioPc = 0;
 
 function sceltaPc() {
     const scelta = ['carta', 'forbice', 'sasso'];
-    const randomIndex = Math.floor(Math.random() * scelta.length);
-    return scelta[randomIndex];
+    const sceltaCasuale = Math.floor(Math.random() * scelta.length);
+    return scelta[sceltaCasuale];
 }
 
 function risultati(sceltaUtente, sceltaPc) {
