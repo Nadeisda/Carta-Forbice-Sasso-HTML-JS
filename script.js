@@ -37,4 +37,6 @@ function gioca(sceltaUtente) {
 function rigioca() {
     document.getElementById('risultato').innerText = '';
     document.getElementById('rigioca').style.display = 'none';
+    punteggioUtente = 0;
+    punteggioPc = 0;
 }
