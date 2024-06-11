@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gioco Carta, Forbice, Sasso</title>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen border-2">
+    
+    <div class="mx-auto w-[600px] rounded-3xl shadow-2xl text-center px-4 py-12 bg-white">
+
+        <h1 class="font-mono font-semibold text-2xl mb-4">BENVENUTO AL GIOCO: CARTA, FORBICE, SASSO</h1>
+        <h2 class="mb-4">Iniziamo a giocare, fai la tua scelta</h2>
+
+        <div class="mb-4">
+            <button class="scelta px-4 py-2 bg-green-500 text-white rounded-lg m-2" onclick="gioca('carta')">Carta📄</button>
+            <button class="scelta px-4 py-2 bg-blue-500 text-white rounded-lg m-2" onclick="gioca('forbice')">Forbice ✂️</button>
+            <button class="scelta px-4 py-2 bg-green-500 text-white rounded-lg m-2" onclick="gioca('sasso')">Sasso 🪨</button>
+        </div>
+    
+        <div id="risultato" class="mt-4 text-lg"></div>
+
+        <div id="punteggio" class="mt-4">
+            <p>Utente: <span id="punteggio-utente">0</span></p>
+            <p>Pc: <span id="punteggio-pc">0</span></p>
+        </div>
+
+        <button id="rigioca" class="mt-4 px-4 py-2 bg-gray-500 text-white rounded-lg" onclick="rigioca()" style="display:none;">Rigioca</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
